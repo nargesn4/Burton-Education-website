@@ -1,0 +1,25 @@
+header{padding: 20px;
+}
+body{
+    margin:auto;
+    width:100%;
+}
+section.img{
+    width: 490%;
+    padding: 20px;
+}
+section.img img{
+    display: block;
+}
+section.apple {
+    float: left;
+    padding: 20px;
+    width: 50%;
+}
+nav{
+    padding: 20px;
+}
+div.wrapper{
+    width: 100%;
+    margin: auto;
+}
