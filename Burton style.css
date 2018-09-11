@@ -16,6 +16,11 @@ section.apple {
     float: left;
     padding-left: 20px;
     width: 50%;
+    margin: 0px;
+}
+#beneden{
+    padding-left: 20px;
+    width: 100%;
 }
 nav{
     padding: 20px;
@@ -30,5 +35,8 @@ div.wrapper{
 #desk{
     margin-top: 10px;
     margin-bottom: 10px;
-
+}
+article{
+    float: left;
+    width: 31%;
 }
