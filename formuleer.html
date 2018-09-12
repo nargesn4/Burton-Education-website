@@ -3,27 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <title>formuleren</title>
+    <style>
+        form{
+            color: darkblue;
+
+        }
+        form li{
+            list-style-type: none;
+            padding: 10px;
+        }
+        input{
+            border-color: darkblue;
+        }
+        h2{
+            color: black;
+        }
+        .container{
+           width: 100%;
+        }
+        .input{
+            position: absolute;
+            left: 300px;
+        }
+        #div1{
+            float: left;
+            width: 50%;
+        }
+        #div2{
+            position: relative;
+            float: left;
+            width: 50%;
+            padding-top: 30px;
+        }
+        #div2 input{
+            margin: 10px;
+        }
+        #div2 span{
+            margin: 10px;
+        }
+        .checkbox{
+            position: absolute;
+            left: 200px;
+        }
+        select{
+            margin-left: 170px;
+            padding-right: 80px;
+        }
+        .div3{
+            position: fixed;
+            bottom: 60px;
+            right: 300px;
+        }
+        .div3 input{
+            background-color: cornflowerblue;
+            width: 120px;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
 <form action="http://www.savatarian.com/html5/form.php" method="post">
-    <div>
-        <ul>
-            <li>
-              <label for="voornaam" id="voornaam">Voornaam</label>
-              <input type="text" name="voornaam">
-            </li>
-            <li>
-                <label for="tussenvoegsel" id="tussenvoegsel">Tussenvoegsel</label>
-                <input type="text" name="tussenvoegsel">
-            </li>
-            <li>
-                <label for="achternaam" id="achternaam">Achternaam</label>
-                <input type="text" name="achternaam">
-            </li>
-        </ul>
+    <h2>Registratieformulier</h2>
+    <div class="container">
+        <div id="div1">
+            <ul>
+                <li>
+                    <label for="voornaam" id="voornaam">Voornaam</label>
+                    <input type="text" name="voornaam" class="input" style="width: 250px">
+                </li>
+                <li>
+                    <label for="tussenvoegsel" id="tussenvoegsel">Tussenvoegsel</label>
+                    <input type="text" name="tussenvoegsel" class="input" style="width: 250px">
+                </li>
+                <li>
+                    <label for="achternaam" id="achternaam">Achternaam</label>
+                    <input type="text" name="achternaam" class="input" style="width: 250px">
+                </li>
+                <li>
+                     <label for="geslacht" id="geslacht">Geslacht</label>
+                     <input type="radio" name="geslacht" value="man" style=" margin-left: 180px;">man
+                     <input type="radio" name="geslacht" value="vrouw">Vrouw
+                </li>
+                <li>
+                    <label for="kleur-ogen" id="kleur-ogen">Kleur ogen</label>
+                    <select name="kleur-ogen">
+                        <option>groen</option>
+                        <option>blauw</option>
+                        <option>bruin</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="gebortedatum" id="gebortedatum">Gebortedatum</label>
+                    <input type="date" name="gebortedatum" style=" margin-left: 150px;
+            padding-right: 60px;">
+                </li>
+                <li>
+                    <label for="omschrijving" id="omschrijving">Omschrijving</label>
+                    <textarea rows="7" cols="80"></textarea>
+                </li>
+            </ul>
+        </div>
+        <div id="div2">
+            <label for="lekker-eten" id="lekker-eten">lekker eten:</label>
+            <input type="checkbox" name="lekker-eten" value="sperciebonen"  style=" margin-left: 100px;" checked>
+            <span class="checkbox" >Sperciebonen</span> <br>
+            <input type="checkbox" name="lekker-eten" value="aardappelen" style=" margin-left: 180px;" >
+            <span class="checkbox">Aardappelen</span><br>
+            <input type="checkbox" name="lekker-eten" value="hamburger"  style=" margin-left: 180px;">
+            <span class="checkbox">Hamburger</span>
+        </div>
     </div>
-    <div></div>
-    <div></div>
+    <div class="div3">
+        <input type="button" value="Annuleren">
+        <input type="submit" value="Ok">
+    </div>
 </form>
 </body>
 </html>
